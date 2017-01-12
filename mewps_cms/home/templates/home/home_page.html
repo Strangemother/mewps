@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load wagtailimages_tags %}
+{% load wagtailcore_tags %}
+{% load wagtailuserbar %}
+{% load static %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% if request.is_preview %}{% endif %}
+
+{% block content %}
+    {% image page.feed_image original as hero_image %}
+    <style>
+        .hero {
+            background-image: url("{{ hero_image.url }}");
+        }
+    </style>
+    <nav class='main-nav'>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">MEWPS</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li class='page-metric'>
+                    <span class="page-label">Slug</span>
+                    <span class="page-slug page-value">{% slugurl page.slug %}</span>
+                </li>
+                <li class='page-metric'>
+                    <span class="page-label">Date</span>
+                    <span class="page-date page-value">{{ page.date }}</span>
+                </li>
+                <li>
+                    <a href="{% url 'wagtailadmin_home' %}">Admin</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero {{ hero_image.name }}">
+         <!-- <div class="background-image">
+            {% image page.feed_image width-800 %}
+                 </div> -->
+
+        <div class="overlay"></div>
+        <h1>{{ page.title }}</h1>
+    </div>
+
+    <div class="main-content container">
+        {% include_block page.stream_field %}
+        {{ page.body|richtext }}
+    </div>
+
+
+    <!-- {{ page.feed_image }} -->
+{% endblock %}

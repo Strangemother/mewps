@@ -1,0 +1,16 @@
+div#header {
+    background: #2b76b2;
+    color: #EEE;
+}
+
+#branding h1, #branding h1 a:link, #branding h1 a:visited {
+    color: #FFF;
+}
+
+
+.page-explorer .listing .index {
+    background: #2b76b2;
+}
+
+
+a.bicolor.button.button-small.icon.icon-plus.white {}

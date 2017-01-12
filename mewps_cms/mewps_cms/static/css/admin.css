@@ -1,0 +1,163 @@
+div#header {
+    background: #2b76b2;
+    color: #EEE;
+}
+
+#branding h1, #branding h1 a:link, #branding h1 a:visited {
+    color: #FFF;
+}
+
+
+.page-explorer .listing .index {
+    background: #60a2c6;
+}
+
+
+.page-explorer .listing .index .button.bicolor {
+    background: #494949;
+}
+
+.listing .index .button.bicolor {
+    border: solid 1px #1f5d8f;
+}
+
+@media screen and (min-width: 50em)
+.listing td.children:hover {
+    background-color: blue;
+}
+
+
+header {
+    background: #60a2c6;
+}
+
+.tab-nav.merged {
+    background-color: #60a2c6;
+}
+
+
+.tab-nav a {
+    background-color: #1d5683;
+    border-top-color: #7c95a9;
+}
+
+.tab-nav a:hover {
+    color: #fff;
+    border-top-color: #1c415e;
+}
+
+.breadcrumb {
+    padding-top: 0;
+    background: #1d5683;
+}
+
+
+
+.t-inverted .u-btn-current:hover {
+    background-color: #4f9edd;
+    border-color: #63a6dc;
+}
+
+.page-explorer .listing .index .button {
+    background-color: transparent;
+    color: #fff;
+    border-color: #304e65;
+}
+
+.page-explorer .listing .index .button:hover {
+    color: #fff;
+    background: #4f9edd;
+}
+
+.button-secondary {
+    color: #2b76b2;
+    background-color: transparent;
+}
+
+.t-default .u-btn-current {
+    border-color: rgba(0, 0, 0, 0.15);
+    color: #2b76b2;
+}
+
+.t-default .u-btn-current:hover {
+    background: #2b76b2;
+    color: #fff;
+    border-color: #1d5683;
+}
+
+form.status-tag:hover, a.status-tag:hover, a.status-tag.primary:hover {
+    border-color: #2b76b2;
+    color: #2b76b2;
+}
+
+.listing .no-children a:hover {
+    color: #2b76b2;
+}
+
+.privacy-indicator .label-private:before, .privacy-indicator .label-public:before {
+    font-size: 1.5em;
+    color: #2b76b2;
+}
+
+a {
+    outline: none;
+    color: #2b76b2;
+    text-decoration: none;
+}
+
+.nolink:hover {
+    color: #2b76b2;
+}
+
+.stream-menu.stream-menu-closed:hover {
+    border-top-color: #2b76b2;
+}
+
+.stream-menu.stream-menu-closed:hover .toggle {
+    color: #2b76b2;
+}
+
+
+button.button.action-choose.button-small.button-secondary {
+    border-color: #498ec5;
+}
+
+.button:hover {
+    background-color: #498ec5;
+    color: #fff;
+    border-color: transparent;
+}
+
+@media screen and (min-width: 50em) {
+    .object.full input, .object.full textarea, .object.full .richtext {
+        border-width: 0 4px;
+    }
+}
+
+
+.dashboard div#content-main {
+    display: flex;
+    border: solid 4px #f8f8f8;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.dashboard #content {
+    width: initial;
+    /* display: flex; */
+}
+
+#content>h1 {}
+
+.dashboard #content-main .module {
+    width: 48%;
+    padding: 1%;
+}
+
+.dashboard .module caption a.section {
+    font-size: 1.5em;
+}
+
+.dashboard .module table a {
+    font-size: 1.2em;
+}
